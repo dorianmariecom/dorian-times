@@ -1,8 +1,8 @@
 module Dorian
   class Times
     def self.run
-      if ARGV.size != 1
-        puts 'USAGE: times N'
+      if ARGV.size != 1 || ARGV[0] == "--help" || ARGV[0] == "-h"
+        puts "USAGE: times N"
         exit
       end
 
