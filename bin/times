@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
-require 'dorian/times'
+require "dorian/times"
 Dorian::Times.run
