@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.summary = "Prints numbers from 0 to N"
   s.description = "#{s.summary}\n\ne.g. `times 10`"
   s.authors = ["Dorian Marié"]
-  s.email = "dorian@dorianmarie.fr"
+  s.email = "dorian@dorianmarie.com"
   s.files = ["lib/dorian/times.rb"]
   s.executables << "times"
   s.homepage = "https://github.com/dorianmariecom/times"
