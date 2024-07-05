@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "dorian-times"
-  s.version = "0.4.4"
+  s.version = "0.5.0"
   s.summary = "Prints numbers from 1 to N"
   s.description = "#{s.summary}\n\ne.g. `times 10`"
   s.authors = ["Dorian Marié"]
