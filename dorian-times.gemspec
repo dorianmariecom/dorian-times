@@ -3,8 +3,8 @@
 Gem::Specification.new do |s|
   s.name = "dorian-times"
   s.version = "0.5.1"
-  s.summary = "Prints numbers from 1 to N"
-  s.description = "#{s.summary}\n\ne.g. `times 10`"
+  s.summary = "prints numbers from 1 to n"
+  s.description = s.summary
   s.authors = ["Dorian Marié"]
   s.email = "dorian@dorianmarie.com"
   s.files = ["bin/times"]
