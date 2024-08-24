@@ -1,9 +1,21 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-if ARGV.size != 1 || ARGV[0] == "--help" || ARGV[0] == "-h"
-  puts "USAGE: times N"
-  exit
+require "dorian/arguments"
+require "json"
+
+parsed = Dorian::Arguments.parse(
+  start: { type: :integer, alias: :s, default: 1 },
+  version: { alias: :v },
+  help: { alias: :h }
+)
+
+abort parsed.help if parsed.options.help
+
+if parsed.options.version
+  abort File.read(File.expand_path("../../VERSION", __FILE__))
 end
 
-ARGV.first.to_i.times { |i| puts i + 1 }
+parsed.arguments.each do |argument|
+  argument.to_i.times { |i| puts parsed.options.start + i }
+end
