@@ -2,7 +2,6 @@
 # frozen_string_literal: true
 
 require "dorian/arguments"
-require "json"
 
 parsed = Dorian::Arguments.parse(
   start: { type: :integer, alias: :s, default: 1 },
